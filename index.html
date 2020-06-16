@@ -33,6 +33,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
   </head>
   <body>
     <header id="home">
@@ -71,30 +72,107 @@
           </div>
         </div>
       </nav>
-      <div class="text-center heading-content">
-        <div class="header-small" data-aos="fade-down">
-          <div class="border-line"></div>
-          <p>WE LOVE CREATING</p>
-        </div>
-        <div class="header-main" data-aos="zoom-in">
-          <h1>digital designs</h1>
-        </div>
-        <div class="sub-content" data-aos="fade-up">
-          <p>
-            Fi is a design agency. We love art direction, motion graphics,
-            interactive design and illusion
-          </p>
-        </div>
-        <div class="buttons" data-aos="fade-up">
-          <button class="red-btn rounded-btn">Free Consultation</button>
-          <button class="white-btn rounded-btn">How we work</button>
-        </div>
-        <div class="arrow-down">
-          <a href="#section-1">
-            <i class="fas fa-chevron-down"></i>
-          </a>
-        </div>
-      </div>
+
+      <main class="main-content">
+        <section class="slideshow">
+          <div class="slideshow-inner">
+            <div class="slides">
+              <div class="slide is-active ">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Fi Agency</div>
+                    <div class="text">
+                      <p>Digital designs and animations</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-containers"> 
+                  <img src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="images" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Tailored designs</div>
+                    <div class="text">
+                      <p>Unique hand crafted designs</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-containers">
+                  <img src="https://images.unsplash.com/photo-1502325966718-85a90488dc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" class="images" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Made in Nairobi</div>
+                    <div class="text">
+                      <p></p>
+                    </div> 
+                    <!-- <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span> -->
+                    </a>
+                  </div>
+                </div>
+                <div class="image-containers">
+                  <img src="https://images.pexels.com/photos/4153798/pexels-photo-4153798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="images" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Loved by millions</div>
+                    <div class="text">
+                      <p></p>
+                    </div> 
+                    <!-- <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a> -->
+                  </div>
+                </div>
+                <div class="image-containers"> 
+                  <img src="https://images.pexels.com/photos/305530/pexels-photo-305530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="images" />
+                </div>
+              </div>
+            </div>
+            <div class="paginations">
+              <div class="item is-active"> 
+                <span class="icon">1</span>
+              </div>
+              <div class="item">
+                <span class="icon">2</span>
+              </div>
+              <div class="item">
+                <span class="icon">3</span>
+              </div>
+              <div class="item">
+                <span class="icon">4</span>
+              </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow prev">
+                <span class="svg svg-arrow-left">
+                  <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next">
+                <span class="svg svg-arrow-right">
+                  <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+          </div> 
+        </section>
+      </main>
     </header>
     <section class="container section-1" id="section-1" data-aos="fade-in">
       <!-- <div class="border-line"></div> -->
@@ -197,13 +275,13 @@
     </section>
     <section class="section-2" id="about">
       <div class="row w-100 no-gutters">
-        <div class="img col">
+        <div class="img col-md-6">
           <img
             class="img-responsive w-100"
             src="https://images.pexels.com/photos/3027243/pexels-photo-3027243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           />
         </div>
-        <div class="about-content col w-100">
+        <div class="about-content col-md-6 w-100 pb-4">
           <div class="about" data-aos="zoom-in">
             <h1>Have a project in mind? You can reach us by email!</h1>
             <p>
@@ -339,12 +417,20 @@
       </div>
     </section>
     <section class="section-5" id="section-5">
-      <iframe
+      <div class="video-show">
+        <div class="text-center video-play">
+        <a  href="">
+        <i class="far fa-play-circle"></i>
+      </a>
+      <h1>Watch Our Reel</h1>
+    </div>
+      </div>
+      <!-- <iframe
         src="https://player.vimeo.com/video/187982499"
         frameborder="0"
         allow="autoplay; fullscreen"
         allowfullscreen
-      ></iframe>
+      ></iframe> -->
     </section>
     <section class="section-5" id="section-5">
       <h1 class="text-center ml-5 mr-5"  data-aos="zoom-in">
@@ -750,6 +836,7 @@
           $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
         });
       });
+      
     </script>
   </body>
 </html>
