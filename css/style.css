@@ -22,14 +22,14 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #E72121;
+    background-color: #1CA5D7;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
 }
 
 .fixed-top.scrolled {
-    background-color: black !important;
+    background-color: #0E1F64 !important;
     transition: background-color 300ms ease-in-out;
 }
 
@@ -45,8 +45,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-link:hover {
-    color: #E72121 !important;
-    border-bottom: 2px solid #E72121;
+    color: #1CA5D7 !important;
+    border-bottom: 2px solid #1CA5D7;
     transition-timing-function: ease-in-out;
     transition: 0.5s;
     transition-delay: 0.1s;
@@ -372,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-body:hover {
-    background-color: #E72121;
+    background-color: #1CA5D7;
     color: white
 }
 
@@ -402,7 +402,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-content {
-    background-color: #151313;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhdqwalls.com%2Fwallpapers%2Fblue-texture-pf.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about {
@@ -481,7 +483,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-3-links>ul>li>a:hover {
-    color: #E72121;
+    color: #1CA5D7;
 }
 
 .images-red {
@@ -513,7 +515,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content .content-overlay {
-    background: rgba(231, 33, 33, 0.7);
+    background: rgba(28, 165, 215, 0.7);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -589,8 +591,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .more-works-btn:hover {
-    background-color: #E72121;
-    border: 2px solid #E72121;
+    background-color: #1CA5D7;
+    border: 2px solid #1CA5D7;
     color: white;
     transition-timing-function: ease-in-out;
     transition: 0.3s;
@@ -625,7 +627,7 @@ body::-webkit-scrollbar-thumb {
 
 .image {
     margin-bottom: 10%;
-    border: 1.5px solid #E72121;
+    border: 1.5px solid #1CA5D7;
     padding: 0;
 }
 
@@ -674,7 +676,7 @@ iframe {
 }
 
 .video-show>.video-play>a:hover {
-    color: #E72121;
+    color: #1CA5D7;
     transition: all 200ms ease-in-out;
 }
 
@@ -733,7 +735,7 @@ iframe {
 }
 
 .gallery-cell>div {
-    border-top: #E72121 5px solid;
+    border-top: #1CA5D7 5px solid;
     width: 5%;
     margin: 0 auto;
 }
@@ -794,8 +796,8 @@ iframe {
 /* fill-in selected dot */
 
 .flickity-page-dots .dot.is-selected {
-    background: #E72121;
-    border: 6px solid #E72121;
+    background: #1CA5D7;
+    border: 6px solid #1CA5D7;
 }
 
 .section-7 {
@@ -822,7 +824,7 @@ iframe {
 }
 
 .contact-details>h3 {
-    color: #E72121;
+    color: #1CA5D7;
     margin-bottom: 1.5em;
 }
 
@@ -870,9 +872,9 @@ iframe {
 }
 
 .send-message-btn:hover {
-    border: 1.5px solid #E72121;
+    border: 1.5px solid #1CA5D7;
     color: white;
-    background: #E72121;
+    background: #1CA5D7;
 }
 
 .social-icons>a {
@@ -880,7 +882,7 @@ iframe {
 }
 
 .social-icons>a:hover {
-    color: #E72121;
+    color: #1CA5D7;
     text-decoration: none;
 }
 
@@ -904,7 +906,7 @@ iframe {
 
 .footer-1>h1>span {
     font-weight: normal;
-    color: #E72121;
+    color: #1CA5D7;
 }
 
 .footer-1>p {
@@ -959,7 +961,7 @@ input::-webkit-input-placeholder {
 
 .btn-subscribe {
     margin-top: 2em;
-    background-color: #E72121;
+    background-color: #1CA5D7;
     border: none;
     color: white;
     padding-left: 40px;
@@ -970,7 +972,7 @@ input::-webkit-input-placeholder {
 
 .btn-subscribe:hover {
     background-color: white;
-    color: #E72121;
+    color: #1CA5D7;
     transition-timing-function: ease-in-out;
     transition: 0.3s;
 }
@@ -993,7 +995,7 @@ input::-webkit-input-placeholder {
 }
 
 .links>.f2-links>ul>li>a:hover {
-    color: #E72121;
+    color: #1CA5D7;
     text-decoration: none;
 }
 
