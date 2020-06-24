@@ -7,9 +7,9 @@ function slideshowSwitch(slideshow, index, auto) {
   var slides = slideshow.find(".slide");
   var pages = slideshow.find(".pagination");
   var activeSlide = slides.filter(".is-active");
-  var activeSlideImage = activeSlide.find(".image-container");
+  var activeSlideImage = activeSlide.find(".image-containers");
   var newSlide = slides.eq(index);
-  var newSlideImage = newSlide.find(".image-container");
+  var newSlideImage = newSlide.find(".image-containers");
   var newSlideContent = newSlide.find(".slide-content");
   var newSlideElements = newSlide.find(".caption > *");
   if (newSlide.is(activeSlide)) return;
