@@ -381,12 +381,12 @@ body::-webkit-scrollbar-thumb {
   object-fit: cover;
 }
 
-.row.no-gutters {
+.no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 
-.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
+.no-gutters>[class^="col-"], .no-gutters>[class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }

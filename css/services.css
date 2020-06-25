@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -31,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 300ms ease-in-out;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
   padding-left: 30px;
   font-size: 14px;
   font-weight: bold;
@@ -68,7 +67,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.main-title > h1 {
+.main-title>h1 {
   font-size: 7em;
   font-weight: bold;
   text-transform: uppercase;
@@ -79,7 +78,7 @@ header {
   max-width: 100%;
 }
 
-.arrow-down > a {
+.arrow-down>a {
   position: absolute;
   top: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -88,7 +87,7 @@ header {
   color: white;
 }
 
-.arrow-down > a:hover {
+.arrow-down>a:hover {
   color: white;
 }
 
@@ -97,14 +96,15 @@ header {
   text-align: center;
 }
 
-.col-item > h1 {
+.col-item>h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
 
-.col-item > img {
+.col-item>img {
   margin-bottom: 30px;
 }
+
 .image-container-service img {
   object-fit: cover;
 }
@@ -113,8 +113,8 @@ header {
   margin-right: 0;
   margin-left: 0;
 }
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }
