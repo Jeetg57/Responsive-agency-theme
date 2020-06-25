@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 body, html {
   height: 100%;
   margin: 0;
@@ -361,41 +360,6 @@ body::-webkit-scrollbar-thumb {
 .section-1 {
   padding-top: 40px;
   margin-bottom: 50px;
-}
-
-.col-item {
-  padding: 7% 8% !important;
-  text-align: center;
-}
-
-.col-item>h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-}
-
-.col-item>img {
-  margin-bottom: 30px;
-}
-
-.image-container-service img {
-  object-fit: cover;
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.no-gutters>[class^="col-"], .no-gutters>[class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-@media (max-width: 576px) {
-  .col-item {
-    padding: 0;
-    text-align: center;
-  }
 }
 
 .card {
