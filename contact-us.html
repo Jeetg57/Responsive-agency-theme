@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contact-us.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
+  />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"
+  ></script>
+  <link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+  crossorigin="anonymous"
+/>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkiJovztv8oIwsc1cpyJhQVE-opqmvYhE&callback=initMap"></script> 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+  <header id="home">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <div
+          class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <h1>Fi</h1>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+      
+        </div>
+      </div>
+    </nav>
+    <div class="main-title">
+      <h1>LETS TALK</h1>
+    </div>
+    <div class="text-center arrow-down">
+      <a href="#services"><i class="fas fa-angle-down"></i>
+      </a>
+     </div>
+    </main>
+  </header>
+  <section class="services" id="services">
+    <div class="row no-gutters">
+    <div class="col-12 col-md-6 col-sm" data-aos="zoom-in">
+        <section id="map">
+
+        </section>
+    </div>
+    <div class="col-12 col-md-3 col-sm col-item London" style="--image-url:url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.100resilientcities.org%2Fwp-content%2Fuploads%2F2017%2F06%2FNairobi.jpg&f=1&nofb=1)" data-aos="zoom-in" data-aos-delay="600">
+        <h1>NAIROBI</h1>
+        <hr>
+        <p>94 Academy Street <br>
+          Barrington, London <br>
+          Tel: +44 (0)20 7405 7686</p>
+          <a href="" class="btn-rounded">Contact</a>
+      </div>
+    <div class="col-12 col-md-3 col-sm col-item NY" style="--image-url:url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.travelstart.co.ke%2Fblog%2Fwp-content%2Fuploads%2F2014%2F04%2FTusks_in_City_of_Mombasa-1024x768.jpg)" data-aos="zoom-in" data-aos-delay="600">
+      <h1>MOMBASA</h1>
+      <hr>
+      <p>94 Academy Street<br>
+        Barrington, London <br>
+        Tel: +44 (0)20 7405 7686</p>
+        <a href="" class="btn-rounded">Contact</a>
+    </div>
+  </div>
+  </section>
+
+  <section id="form">
+    <h1 class="text-center mb-5">START YOUR PROJECT</h1>
+    <form class="container">
+        <input type="text" id="defaultSaveFormFirstName" class="form-control mb-3" placeholder="Your Name">
+        <div class="row mb-3 no-gutters">
+            <div class="col"><input type="text" id="defaultSaveFormLastName" class="form-control" placeholder="Your Email"></div>
+            <div class="col"><input type="email" id="defaultSaveFormEmail" class="form-control" placeholder="Phone">
+            </div>
+        </div>
+        
+        <textarea placeholder="Describe your project" class="form-control mb-4" rows="8"></textarea>
+
+        <select class="form-control rounded-0 mb-4" id="exampleFormControlTextareaSave"placeholder="Message">
+            <option value="500-1000">500-1000</option>
+            <option value="500-1000">500-1000</option>
+            <option value="500-1000">500-1000</option>
+
+            <option value="500-1000">500-1000</option>
+
+        </select>
+
+        <button class="btn-rounded-2 btn-block" type="submit">Save</button>
+    </form>
+
+  </section>
+  <footer class="text-center">
+    <div class="social-icons">
+        <a href="#"><i class="icon-social-facebook"></i></a>
+        <a href="#"><i class="icon-social-behance"></i></a>
+        <a href="#"> <i class="icon-social-dribbble"></i></a>
+        <a href="#"><i class="icon-social-instagram"></i></a>
+      </div>
+  </footer>
+     
+<script> 
+function initMap() {
+  // The location of Uluru
+  var delta = {lat: -1.2659145, lng: 36.8020859};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: delta});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: delta, map: map});
+}
+    AOS.init({ duration: 1200, once: true });
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    });
+    
+  </script>
+</body>
+</html>
