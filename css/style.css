@@ -369,6 +369,7 @@ body::-webkit-scrollbar-thumb {
 .card-body>i {
   font-size: 2.5em;
   margin-bottom: 1em;
+  color: #0e1f64;
 }
 
 .card-body:hover {
