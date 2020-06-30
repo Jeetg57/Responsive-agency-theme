@@ -136,7 +136,7 @@ header {
 }
 
 .London {
-  background: linear-gradient(rgba(122, 47, 234, 0.8), rgba(122, 47, 234, 0.8)),
+  background: linear-gradient(rgba(14, 31, 100, 0.8), rgba(14, 31, 100, 0.8)),
     var(--image-url) center center;
   background-size: cover;
   color: white;
