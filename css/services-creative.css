@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -31,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 300ms ease-in-out;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
   padding-left: 30px;
   font-size: 14px;
   font-weight: bold;
@@ -51,8 +50,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    var(--image-url) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--image-url) center center;
   min-height: 75%;
   position: relative;
   background-position: top;
@@ -69,7 +67,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.main-title > h1 {
+.main-title>h1 {
   font-size: 7em;
   font-weight: bold;
   text-transform: uppercase;
@@ -80,7 +78,7 @@ header {
   max-width: 100%;
 }
 
-.arrow-down > a {
+.arrow-down>a {
   position: absolute;
   top: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -95,7 +93,7 @@ header {
   color: white;
 }
 
-.arrow-down > a:hover {
+.arrow-down>a:hover {
   color: white;
 }
 
@@ -103,7 +101,7 @@ header {
   padding: 5em 5em;
 }
 
-.approach > h1 {
+.approach>h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
@@ -119,7 +117,7 @@ header {
   background-color: #1b1d1f;
 }
 
-.grid > i {
+.grid>i {
   color: #0e1f64;
   font-size: 5em;
 }
@@ -129,26 +127,26 @@ header {
 }
 
 .branding {
-  padding: 4em 2em 4em 2em;
+  padding: 6em 2em 6em 2em;
   color: white;
 }
 
 .grid {
-  padding: 4em 2em 4em 2em;
+  padding: 6em 2em 6em 2em;
   color: white;
 }
 
-.branding > h3 {
+.branding>h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
 
-.grid > h3 {
+.grid>h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
 
-.branding > i {
+.branding>i {
   color: #0e1f64;
   font-size: 5em;
 }
@@ -158,13 +156,19 @@ header {
   text-align: center;
 }
 
-.col-item > h1 {
+.col-item>h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
 
-.col-item > img {
-  margin-bottom: 30px;
+.grid>h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.branding>h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
 }
 
 .image-container-service img {
@@ -176,8 +180,7 @@ header {
   margin-left: 0;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -197,7 +200,7 @@ header {
   background: transparent;
 }
 
-.gallery-cell > p {
+.gallery-cell>p {
   color: white;
   font-size: 1.4em;
   text-transform: uppercase;
@@ -205,13 +208,13 @@ header {
   margin-bottom: 25px;
 }
 
-.gallery-cell > h6 {
+.gallery-cell>h6 {
   color: white;
   margin-top: 25px;
   text-transform: uppercase;
 }
 
-.gallery-cell > div {
+.gallery-cell>div {
   border-top: #1ca5d7 5px solid;
   width: 5%;
   margin: 0 auto;
@@ -288,11 +291,23 @@ header {
   padding-top: 140px;
   color: white;
   padding-bottom: 100px;
-  background: linear-gradient(rgba(14, 31, 100, 0.6), rgba(14, 31, 100, 0.6)),
-    var(--image-url) center center;
+  background: linear-gradient(rgba(14, 31, 100, 0.6), rgba(14, 31, 100, 0.6)), var(--image-url) center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.service-items {
+  list-style-type: none;
+}
+
+.service-items>li {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.link-service:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 576px) {

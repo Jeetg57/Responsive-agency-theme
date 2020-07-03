@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -31,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   transition: background-color 300ms ease-in-out;
 }
 
-.navbar-nav > li {
+.navbar-nav>li {
   padding-left: 30px;
   font-size: 14px;
   font-weight: bold;
@@ -68,7 +67,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.main-title > h1 {
+.main-title>h1 {
   font-size: 7em;
   font-weight: bold;
   text-transform: uppercase;
@@ -79,7 +78,7 @@ header {
   max-width: 100%;
 }
 
-.arrow-down > a {
+.arrow-down>a {
   position: absolute;
   top: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -88,7 +87,7 @@ header {
   color: white;
 }
 
-.arrow-down > a:hover {
+.arrow-down>a:hover {
   color: white;
 }
 
@@ -97,12 +96,12 @@ header {
   text-align: center;
 }
 
-.col-item > h1 {
+.col-item>h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
 }
 
-.col-item > img {
+.col-item>img {
   margin-bottom: 30px;
 }
 
@@ -115,8 +114,7 @@ header {
   margin-left: 0;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -136,15 +134,13 @@ header {
 }
 
 .London {
-  background: linear-gradient(rgba(14, 31, 100, 0.8), rgba(14, 31, 100, 0.8)),
-    var(--image-url) center center;
+  background: linear-gradient(rgba(14, 31, 100, 0.6), rgba(14, 31, 100, 0.6)), var(--image-url) center center;
   background-size: cover;
   color: white;
 }
 
 .NY {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    var(--image-url) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--image-url) center center;
   background-size: cover;
   color: white;
 }
@@ -211,7 +207,7 @@ header {
   background-color: #0e1f64;
 }
 
-.social-icons > a {
+.social-icons>a {
   color: black;
   background-color: white;
   border: 1px solid white;
@@ -220,7 +216,7 @@ header {
   border-radius: 200px;
 }
 
-.social-icons > a:hover {
+.social-icons>a:hover {
   color: white;
   background-color: transparent;
   border: 1px solid white;
@@ -229,6 +225,6 @@ header {
   text-decoration: none;
 }
 
-.social-icons > a > i {
+.social-icons>a>i {
   font-size: 1.5em;
 }

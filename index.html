@@ -25,10 +25,9 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
@@ -64,7 +63,7 @@
                 <a class="nav-link" href="#section-3">WORK</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#section-5">TEAM</a>
+                <a class="nav-link" href="#section-5">STATS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact-us.html">CONTACT</a>
@@ -435,7 +434,53 @@
       ></iframe> -->
     </section>
     <section class="section-5" id="section-5">
-      <h1 class="text-center ml-5 mr-5"  data-aos="zoom-in">
+    <div class="box d-flex flex-row flex-wrap justify-content-around">
+      <div class="item row no-gutters">
+        <div class="col-12 col-md-6 col-sm">
+          <i class="far fa-handshake icon-sec-5"></i>
+        </div>
+        <div class="col-12 col-md-6 col-sm">
+          <div class="counter">3565</div>
+          <p class="font-weight-bold">Happy clients</p>
+        </div>
+        
+      </div>
+      <div class="item row no-gutters">
+        <div class="col-12 col-md-6 col-sm">
+          <i class="fas fa-globe-africa icon-sec-5"></i>
+          
+        </div>
+        <div class="col-12 col-md-6 col-sm">
+          <div class="counter">2345</div>
+        <p class="font-weight-bold">Partners</p>
+        </div>
+        
+      </div>
+      <div class="item row no-gutters">
+        <div class="col-12 col-md-6 col-sm">
+          <i class="fas fa-user-check icon-sec-5"></i>
+
+        </div>
+        <div class="col-12 col-md-6 col-sm">
+          <div class="counter">3976</div>
+          <p class="font-weight-bold">Great projects</p>
+        </div>
+        
+      </div>
+      <div class="item row no-gutters">
+        <div class="col-12 col-md-6 col-sm">
+          
+          <i class="fas fa-poll icon-sec-5"></i>
+        </div>
+        <div class="col-12 col-md-6 col-sm">
+          <div class="counter">1590</div>
+          <p class="font-weight-bold">Team Members</p>
+        </div>
+        
+      </div>
+     
+</div>
+      <!-- <h1 class="text-center ml-5 mr-5"  data-aos="zoom-in">
         Meet The Team
       </h1>
       <h4 class="text-center mt-3 text-muted container"  data-aos="fade-up">
@@ -585,7 +630,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="section-6" id="section-6">
       <h1 class="text-center ml-5 mr-5" data-aos="zoom-in">
@@ -826,19 +871,47 @@
           </ul>
         </div>
         <div class="biz">
-          <p>© 2020 BY REAL BIZ</p>
+          <p>© <span id="date"></span> BY REAL BIZ</p>
         </div>
       </div>
     </footer>
     <script>
       AOS.init({ duration: 1200, once: true });
       $(function () {
+      var eventFired = false,
+      objectPositionTop = $('#section-5').offset().top - 800;
+
+      $(window).on('scroll', function() {
+
+      var currentPosition = $(document).scrollTop();
+      if (currentPosition > objectPositionTop && eventFired === false) {
+        eventFired = true;
+        // your code
+        $('.counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2500,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+      }
+
+});
+      
+        var d = new Date();
+        var year = d.getFullYear();
+        $("#date").html(year)
         $(document).scroll(function () {
           var $nav = $(".fixed-top");
           $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
         });
       });
       
+     
     </script>
   </body>
 </html>
