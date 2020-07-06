@@ -310,6 +310,10 @@ header {
   text-decoration: none;
 }
 
+.service-items>li {
+  text-transform: uppercase;
+}
+
 @media (max-width: 576px) {
   .col-item {
     padding: 0;
