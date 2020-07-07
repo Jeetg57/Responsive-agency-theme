@@ -608,7 +608,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-5 {
-  margin: 60px 0;
+  padding: 60px 0;
+  background-color: #0e1f64;
 }
 
 .gallery-team {
@@ -701,7 +702,7 @@ iframe {
 }
 
 .section-6 {
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 80px;
   padding-top: 100px;
   color: white;
@@ -1035,4 +1036,9 @@ input::-webkit-input-placeholder {
 .counter {
   font-size: 40px;
   font-weight: bold;
+  color: white;
+}
+
+.counter-text {
+  color: white;
 }
