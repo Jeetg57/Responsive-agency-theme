@@ -127,12 +127,12 @@ header {
 }
 
 .branding {
-  padding: 6em 2em 6em 2em;
+  padding: 3em 2em 3em 2em;
   color: white;
 }
 
 .grid {
-  padding: 6em 2em 6em 2em;
+  padding: 3em 2em 3em 2em;
   color: white;
 }
 
@@ -171,7 +171,7 @@ header {
   font-weight: bold;
 }
 
-.image-container-service img {
+.image-container-service {
   object-fit: cover;
 }
 
@@ -303,7 +303,7 @@ header {
 }
 
 .service-items>li {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 2em;
 }
 
@@ -313,6 +313,12 @@ header {
 
 .service-items>li {
   text-transform: uppercase;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 576px) {
