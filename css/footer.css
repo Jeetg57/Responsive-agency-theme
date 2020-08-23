@@ -1,12 +1,12 @@
 .site-footer {
-  background-color: #26272b;
+  background-color: #0e1f64;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
-  color: #737373;
+  color: #fff;
 }
 .site-footer hr {
-  border-top-color: #bbb;
+  border-top-color: #fff;
   opacity: 0.5;
 }
 .site-footer hr.small {
@@ -20,7 +20,7 @@
   letter-spacing: 2px;
 }
 .site-footer a {
-  color: #737373;
+  color: #fff;
 }
 .site-footer a:hover {
   color: #3366cc;
@@ -34,7 +34,7 @@
   display: block;
 }
 .footer-links a {
-  color: #737373;
+  color: #fff;
 }
 .footer-links a:active,
 .footer-links a:focus,
@@ -55,7 +55,7 @@
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: #33353d;
+  background-color: #fff;
 }
 .copyright-text {
   margin: 0;

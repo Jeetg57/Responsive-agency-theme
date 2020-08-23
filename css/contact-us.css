@@ -203,7 +203,7 @@ header {
 }
 
 .social-icons {
-  padding: 5em 0;
+  padding: 1em 0;
   background-color: #0e1f64;
 }
 
@@ -211,9 +211,6 @@ header {
   color: black;
   background-color: white;
   border: 1px solid white;
-  padding: 30px;
-  margin: 10px;
-  border-radius: 200px;
 }
 
 .social-icons>a:hover {
